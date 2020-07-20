@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.background-image{
+    background: url('/images/background.jpg');
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+    color: white;
+}
+
+.navbar-menu{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    padding-left: 2em;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+/* sectipn contet css */
+
+.section1{
+    margin-top: 20vh;
+    margin-left: 35vh;
+    color: white;
+    
+}
+
+.section1  h1 {
+    font-size: 3em;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.section1 p {
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Rokkitt', serif;
+}
+
+.btn{
+    margin-top: 2em;
+    padding: 1em 2.5em;
+    font-size: 0.8em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+
+}
+/*about me section*/
+.aboutMe{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:lightgray;
+    align-items: center;
+    height: 35vh;
+    padding: 10em 30vh;
+}
+.aboutTitle h2{
+    text-align: justify;
+    font-family: 'Reem Kufi', sans-serif;
+
+}
+.aboutPic{
+    background-image: url('/images/cardphoto.jpg');
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 500px;
+    margin: 20px 20px;
+}
+.aboutInfo{
+    flex-grow: 2;
+    margin: 20px 20px;
+    height: 200px;
+    width: 750px;
+    padding-left: 25px;
+}
+.myPride{
+    flex-grow: 1;
+    width: 550px;
+    height: 200px;
+    margin: 20px 20px;
+    padding-left: 25px;
+}
+.vertical { 
+    border-left: 5px solid black; 
+    height: 200px; 
+    left: 50%; 
+} 
+.horizontal{
+    border: 2px solid black; 
+    width: 100px;
+    border-radius: 15%;
+    padding-left: 5px;
+    margin-top: 5px;
+    align-content: center;
+}
+@media (max-width:880px){
+    .aboutMe{
+        flex-direction: column;
+        height: 105vh;
+        padding-right: 03vh;
+        padding-left: 03vh;
+        padding-bottom: 0;
+        padding-top: 2em;
+    }
+    .aboutPic{
+        margin-top: 1em;
+        height: 200px;
+        width: 100%;
+    }
+    .aboutInfo{
+        height: 20px;
+        width: 100%;
+    }
+    .myPride{
+        height: 30px;
+        width: 100%; 
+        padding-bottom: 10em;     
+    }
+    .vertical { 
+        border-left: 1px solid black; 
+        height: 0px; 
+    
+    } 
+}
+
+/* Skills */
+.skills{
+    margin: 1em 1em;
+    display: flex;
+    padding:  0em 15em;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: auto;
+}
+.skillTitle{
+    text-align: center;
+    justify-content: center;
+}
+.skill {
+    padding-bottom: 2em;
+    padding-top: 1em;
+    text-align: left;
+}
+.skill small {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: darkslategrey;
+    margin-top: 5px;
+    font-family: Poppins, sans-serif;
+}
+@media (max-width:880px){
+    .skills{
+        flex-direction: column;
+        height: auto;
+        padding-right: 03vh;
+        padding-left: 03vh;
+        padding-bottom: 0;
+        padding-top: 2em;
+    }
+}
+
+
+/* connect me */
+.contactMe{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:lightgray;
+    align-items: center;
+    height: 35vh;
+}
+.contactMe h1{
+    font-size: 2em;
+}
+.links{
+    margin-top: 1em;
+    width: 10em;
+    height: 2.5em;
+    font-size: 1em;
+    border-color: black;
+    border-left-width: 4px;
+    border-left-style: solid ;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+@media (max-width:880px){
+    .background-image{
+        height: 65vh;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        padding: 1.5em;
+    }
+    .navbar-menu{
+        margin-top: 1.5em;
+        padding-right: 2em;
+    }
+    .section1 {
+        margin-top: 20vh;
+        margin-left: 04vh;
+    }
+    .section1 h1{
+        font-size: 2.5em;
+    }
+    .section1 p {
+        font-size: 1.2em;
+    }
+    .btn{
+        margin-top: 2em;
+        padding: 1em 1.5em;
+        font-size: 0.7em;
+        border-radius: 50px;
+    
+    }
+}
+
+footer{
+    text-align: center;
+    height: 45px;
+    padding: 2em;
+}
